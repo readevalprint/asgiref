@@ -83,7 +83,7 @@ class BaseChannelLayer(object):
         return self.capacity
 
     def match_type_and_length(self, name):
-        if (len(name) < 100) and (isinstance(name, six.text_type)):
+        if (len(name) < 100) and (isinstance(name, six.string_types)):
             return True
         return False
 
